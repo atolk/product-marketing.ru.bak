@@ -1,0 +1,24 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.pug",
+                "isAsync": true,
+                "cmd": "npx pug -P ${file}"
+            },
+            {
+                "match": "\\.txt$",
+                "cmd": "echo 'I am a .txt file ${file}.'"
+            },
+            {
+                "match": "\\.js$",
+                "cmd": "echo 'I am a .js file ${file}.'"
+            },
+            {
+                "match": ".*",
+                "cmd": "echo 'I am ${env.USERNAME}.'"
+            }
+        ]
+    },
+    "git.ignoreLimitWarning": true
+}

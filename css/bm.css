@@ -1,0 +1,21 @@
+.bm-ion-list {
+    list-style: none;
+}
+
+.bm-ion-list i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #50d8af;
+    list-style: none;
+}
+
+.bm-ion-list li {
+    padding-bottom: 10px;
+}
+
+/* Блок с выводами: иконка + крупный текст
+*/
+.avt-conclusion div.icon i {
+    font-size: 128px;
+    color: #50d8af;
+}

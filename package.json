@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-analytics-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "browser-sync start --server --files \"*.html\"",
+
+    "compile-pug": "find . -path ./node_modules -prune -o -name \"*.pug\" -print -exec pug -P {} '+' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/atolk/bootstrap-analytics-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/atolk/bootstrap-analytics-landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
