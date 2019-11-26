@@ -19,3 +19,7 @@
     font-size: 128px;
     color: #50d8af;
 }
+
+#about .content.pm-bad-news i {
+    color: red;
+}

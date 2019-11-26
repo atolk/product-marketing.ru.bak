@@ -60,38 +60,37 @@ html
             ============================
         header#header
             .container
-                .row
-                    #logo.pull-left
-                        h1
-                            a.scrollto(href='#body') Product
-                                span Marketing
-                            // Uncomment below if you prefer to use an image logo
-                            // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
-                    nav#nav-menu-container
-                        ul.nav-menu
-                            li.menu-active
-                                a(href='#body') В начало
+                #logo.pull-left
+                    h1
+                        a.scrollto(href='#body') Product
+                            span Marketing
+                        // Uncomment below if you prefer to use an image logo
+                        // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
+                nav#nav-menu-container
+                    ul.nav-menu
+                        li.menu-active 
+                            a(href='#body') В начало
+                        li
+                            a(href='#about') ЧТО мы делаем
+                        li
+                            a(href='#services') КАК мы делаем
+                        li
+                            a(href='#portfolio') Кейсы
+                        // li
+                            a(href='#team') Team
+                        // li.menu-has-children
+                            a(href='') Drop Down
+                            ul
                             li
-                                a(href='#about') ЧТО мы делаем
+                                a(href='#') Drop Down 1
                             li
-                                a(href='#services') КАК мы делаем
+                                a(href='#') Drop Down 3
                             li
-                                a(href='#portfolio') Кейсы
-                            // li
-                                a(href='#team') Team
-                            // li.menu-has-children
-                                a(href='') Drop Down
-                                ul
-                                li
-                                    a(href='#') Drop Down 1
-                                li
-                                    a(href='#') Drop Down 3
-                                li
-                                    a(href='#') Drop Down 4 
-                                li
-                                    a(href='#') Drop Down 5
+                                a(href='#') Drop Down 4 
                             li
-                                a(href='#contact') Контакты
+                                a(href='#') Drop Down 5
+                        li
+                            a(href='#contact') Контакты
                 // #nav-menu-container
         // #header
         //
@@ -100,12 +99,13 @@ html
             ============================
         section#intro.wow.fadeIn
             .intro-content
-                h2 Создаем потоки
-                    br
-                    span ваших клиентов!
-                div
-                    a.btn-get-started.scrollto(href='#about') Приступить
-                    a.btn-projects.scrollto(href='#portfolio') Наши проекты
+                img(src='/img/product-marketing-circle.svg')
+                //- h2 Создаем потоки
+                //-     br
+                //-     span ваших клиентов!
+                //- div
+                //-     a.btn-get-started.scrollto(href='#about') Приступить
+                //-     a.btn-projects.scrollto(href='#portfolio') Наши проекты
             #intro-carousel.owl-carousel
                 .item(style="background-image: url('img/intro-carousel/1.jpg');")
                 .item(style="background-image: url('img/intro-carousel/2.jpg');")
@@ -121,22 +121,58 @@ html
             section#about.wow.fadeInUp
                 .container
                     .row
-                        .col-lg-6.about-img
-                            img(src='img/about-img.jpg' alt='')
+                        .col-lg-6.content.pm-bad-news
+                            h2 Что не так с привычным маркетингом
+                            h3
+                                | Три фактора успеха
+                            ul
+                                li
+                                    i.ion-android-cancel
+                                    | Основывается на субъективном, поверхностном &laquo;понимании&raquo; продукта, сегментации и потребностей ваших клиентов.
+                                li
+                                    i.ion-android-cancel
+                                    | Режим &laquo;черного ящика&raquo;. После окончания кампании у вас остались в лучшем случае клиенты, в худщем &mdash; потерянные деньги и ложное понимание неработающего канала.
+                                li
+                                    i.ion-android-cancel
+                                    | Игнорирование технологической составляющей маркетинговых кампаний, решений на основе данных и тестов.
                         .col-lg-6.content
-                            h2 Как мы создаем потоки клиентов для вас
+                            h2 Продуктовый маркетинг
                             h3
                                 | Три фактора успеха
                             ul
                                 li
                                     i.ion-android-checkmark-circle
-                                    | Тонкая настройка аналитики. Позволит увидеть поведение пользователей на вашем сайте, произвести сегментацию и лучше их узнать.
+                                    | Глубокое погружение в продукт и отрасль. В результаты прошедших кампаний. Построение клиентской воронки, CJM, в перфоманс конкурентов. Это бизис, необходимый, для выдвижения правильных продуктовых гипотез.
                                 li
                                     i.ion-android-checkmark-circle
-                                    | Таргетинг и креативы. Для разных сегментов ваших пользователей важны различные ценности вашего продукта.
+                                    | Тонкая настройка аналитики и дашбордов. Метрики важные для вашего бизнеса, а не для маркетолога. Позволит увидеть поведение пользователей на вашем сайте, произвести сегментацию и лучше их узнать. Ощущение продукта позволяет выдвигать гипотезы. Объективные, скурпулезно собранные данные - подтверждать или опровергать их. Вся аналитическая инфраструктура и знание КАК и ПОЧЕМУ это работает останется с вами навсегда.
                                 li
                                     i.ion-android-checkmark-circle
-                                    | Тестирование, тестирование, тестирование. Мы работаем сразу с большим количеством гипотез, чтобы выбрать из них действительно лучшие.
+                                    | Тестирование, тестирование, тестирование. Не существует единственного гениального правильного решения бизнес-задачи. Существуют только гипотезы и объективные статистически значимые данные их подтверждающие. Чем больше мы проведем тестов в единицу времени, тем скорее отыщется масштабируемый канал привлечения клиентов, а ваше понимание продукта и пользователях обоготится знаниями, основанными на данных.
+            // #about
+            //
+                ==========================
+                About Section
+                ============================
+            //- section#about.wow.fadeInUp
+            //-     .container
+            //-         .row
+            //-             .col-lg-6.about-img
+            //-                 img(src='img/about-img.jpg' alt='')
+            //-             .col-lg-6.content
+            //-                 h2 Как мы создаем потоки клиентов для вас
+            //-                 h3
+            //-                     | Три фактора успеха
+            //-                 ul
+            //-                     li
+            //-                         i.ion-android-checkmark-circle
+            //-                         | Тонкая настройка аналитики. Позволит увидеть поведение пользователей на вашем сайте, произвести сегментацию и лучше их узнать.
+            //-                     li
+            //-                         i.ion-android-checkmark-circle
+            //-                         | Таргетинг и креативы. Для разных сегментов ваших пользователей важны различные ценности вашего продукта.
+            //-                     li
+            //-                         i.ion-android-checkmark-circle
+            //-                         | Тестирование, тестирование, тестирование. Мы работаем сразу с большим количеством гипотез, чтобы выбрать из них действительно лучшие.
             // #about
             //
               ==========================
@@ -145,8 +181,9 @@ html
             section#services
                 .container
                     .section-header
-                        h2 Из каких этапов состоит работа
+                        h2 Декомпозиция задач
                         h3 Это не про маркетинг, это про ваш продукт.
+                        h3 Продуктовые инсайты и маркетинг &mdash; неделимые сущности.
                     .row
                         .col-lg-12.content
                             ul.bm-ion-list
@@ -290,7 +327,7 @@ html
             section#portfolio.wow.fadeInUp
               .container
                 .section-header
-                  h2 Кейсы
+                  h2 Кейсы TBD
                   p
                     | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
               .container-fluid
@@ -359,7 +396,7 @@ html
             section#testimonials.wow.fadeInUp
               .container
                 .section-header
-                  h2 Testimonials
+                  h2 Отзывы
                   p
                     | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
                 .owl-carousel.testimonials-carousel
@@ -425,7 +462,7 @@ html
             section#team.wow.fadeInUp
               .container
                 .section-header
-                  h2 Our Team
+                  h2 Обо мне
                 .row
                   .col-lg-3.col-md-6
                     .member
