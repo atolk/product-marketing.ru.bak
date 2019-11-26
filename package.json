@@ -9,7 +9,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "browser-sync start --server --files \"*.html\"",
-
     "compile-pug": "find . -path ./node_modules -prune -o -name \"*.pug\" -print -exec pug -P {} '+' "
   },
   "repository": {

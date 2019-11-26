@@ -2,9 +2,9 @@ doctype html
 html
     head
         meta(charset='utf-8')
-        title Создание маркетинг-стратегии, аналитика, оптимизация SEO, продвижение в социальных сетях
+        title Продакт-маркетинг - аналитика и маркетинг, ориентированная на ваш продукт
         meta(content='width=device-width, initial-scale=1.0' name='viewport')
-        meta(content='Product management, продакт менеджемент, продакт менеджер, оптимизация, аналитика, SEO, яндекс метрика, google analytics, facebook' name='keywords')
+        meta(content='Product marketing, продакт маркетинг, Product management, продакт менеджемент, продакт менеджер, оптимизация, аналитика, SEO, яндекс метрика, google analytics, facebook' name='keywords')
         meta(content='' name='description')
         // Favicons
         link(href='img/favicon.png' rel='icon')
@@ -29,17 +29,24 @@ html
           ==========================
           Top Bar
           ============================
+
         section#topbar.d-none.d-lg-block
             .container.clearfix
                 .contact-info.float-left
                     i.fa.fa-envelope-o
-                    a(href='mailto:anton@atolk.me') anton@atolk.me
-                    // i.fa.fa-phone
-                        |  +1 5589 55488 55
+                    a(href='mailto:avt@product-marketing.ru') avt@product-marketing.ru
+                    
                 .social-links.float-right
                     // a.twitter(href='#')
                         i.fa.fa-twitter
-                    a.facebook(href='https://www.facebook.com/tolkachev.me')
+                    a.phone(href="tel:+79067577826", target="_blank") 
+                        i.fa.fa-phone +7 (906) 757-78-26
+                    
+                    a.telegram(href='https://t.me/atolk_me', target='_blank')
+                        i.fa.fa-telegram
+                    a.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank')
+                        i.fa.fa-whatsapp
+                    a.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank')
                         i.fa.fa-facebook
                     // a.instagram(href='#')
                         i.fa.fa-instagram
@@ -48,42 +55,43 @@ html
                     // a.linkedin(href='#')
                         i.fa.fa-linkedin
         //
-          ==========================
-          Header
-          ============================
+            ==========================
+            Header
+            ============================
         header#header
             .container
-                #logo.pull-left
-                    h1
-                        a.scrollto(href='#body') Analytics
-                            span Setup
-                        // Uncomment below if you prefer to use an image logo
-                        // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
-                nav#nav-menu-container
-                    ul.nav-menu
-                        li.menu-active
-                            a(href='#body') В начало
-                        li
-                            a(href='#about') О нас  
-                        li
-                            a(href='#services') Услуги
-                        li
-                            a(href='#portfolio') Наши работы
-                        // li
-                            a(href='#team') Team
-                        // li.menu-has-children
-                            a(href='') Drop Down
-                            ul
-                              li
-                                  a(href='#') Drop Down 1
-                              li
-                                  a(href='#') Drop Down 3
-                              li
-                                  a(href='#') Drop Down 4 
-                              li
-                                  a(href='#') Drop Down 5
-                        li
-                            a(href='#contact') Контакты
+                .row
+                    #logo.pull-left
+                        h1
+                            a.scrollto(href='#body') Product
+                                span Marketing
+                            // Uncomment below if you prefer to use an image logo
+                            // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
+                    nav#nav-menu-container
+                        ul.nav-menu
+                            li.menu-active
+                                a(href='#body') В начало
+                            li
+                                a(href='#about') ЧТО мы делаем
+                            li
+                                a(href='#services') КАК мы делаем
+                            li
+                                a(href='#portfolio') Кейсы
+                            // li
+                                a(href='#team') Team
+                            // li.menu-has-children
+                                a(href='') Drop Down
+                                ul
+                                li
+                                    a(href='#') Drop Down 1
+                                li
+                                    a(href='#') Drop Down 3
+                                li
+                                    a(href='#') Drop Down 4 
+                                li
+                                    a(href='#') Drop Down 5
+                            li
+                                a(href='#contact') Контакты
                 // #nav-menu-container
         // #header
         //
