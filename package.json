@@ -19,6 +19,8 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/atolk/bootstrap-analytics-landing#readme",
   "devDependencies": {
+    "@node-minify/cli": "^5.2.1",
+    "@node-minify/html-minifier": "^5.2.0",
     "browser-sync": "^2.26.7",
     "pug-cli": "^1.0.0-alpha6"
   }
