@@ -30,7 +30,7 @@ html
         link(href='lib/ionicons/css/ionicons.min.css' rel='stylesheet')
         // Main Stylesheet File
         link(href='css/style.css' rel='stylesheet')
-        link(href='css/bm.css' rel='stylesheet')
+        link(href='css/pm.css' rel='stylesheet')
     body   
         #preloader
         //
@@ -157,37 +157,7 @@ html
                     .section-header
                         h2 Результат
                         h3 Кратное #[strong снижение стоимости привлечения клиента (customer acquisition cost)] за счет управляемого, основанного на данных продуктового маркетинга.
-                        
-                        
-            // #about
-            //
-                ==========================
-                About Section
-                ============================
-            //- section#about.wow.fadeInUp
-            //-     .container
-            //-         .row
-            //-             .col-lg-6.about-img
-            //-                 img(src='img/about-img.jpg' alt='')
-            //-             .col-lg-6.content
-            //-                 h2 Как мы создаем потоки клиентов для вас
-            //-                 h3
-            //-                     | Три фактора успеха
-            //-                 ul
-            //-                     li
-            //-                         i.ion-android-checkmark-circle
-            //-                         | Тонкая настройка аналитики. Позволит увидеть поведение пользователей на вашем сайте, произвести сегментацию и лучше их узнать.
-            //-                     li
-            //-                         i.ion-android-checkmark-circle
-            //-                         | Таргетинг и креативы. Для разных сегментов ваших пользователей важны различные ценности вашего продукта.
-            //-                     li
-            //-                         i.ion-android-checkmark-circle
-            //-                         | Тестирование, тестирование, тестирование. Мы работаем сразу с большим количеством гипотез, чтобы выбрать из них действительно лучшие.
-            // #about
-            //
-              ==========================
-              Services Section
-              ============================
+  
             section#services
                 .container
                     .section-header
@@ -269,9 +239,7 @@ html
                                 p.description
                                     | Таргетируемся на выделенные ползовательские сегменты и запускаем сразу большое количество тестов в комбинации сегемент-таргетинг-креатив.
                                 // button.btn.btn-light.float-right(data-toggle="modal", data-target="#campaignModal") подробнее
-            // #services
             
-            // 
             section
                 .container
                     .section-header
@@ -346,33 +314,13 @@ html
                                     | #[strong Технологии - моя сильная компетенция]#[br]
                                     | Владею всеми необходимыми инструментами и нахожусь на острие технологий. Там где маркетолог будет давать задачу отделу программирования, я предпочту сделать это сам, чтобы получить результат быстрее. Скорость - это то что действительно имеет значение для реального неспящего бизнеса.
                                     | Человек-швейцарский нож.
-                    .row.section-header
-                        h5
-                            | Продуктовый менеджмент, техническая и продуктовая аналитика, маркетинг, технологии, аналитические системы и программирование настолько тесно вплетены в друг друга, что у вас совершенно точно должны быть закрыты все эти роли,
-                            | либо отделами, либо фрилансерами на аутсорсе. Либо #[br]
-                            strong вы можете сэкономить деньги на зарплатах и время на коммуникациях между этими ролями и нанять одного сфокусированного на продакт-маркетинге профессионала.
-            
-            
-            //
-              ==========================
-              Clients Section
-              ============================
-            // section#clients.wow.fadeInUp
-              .container
-                .section-header
-                  h2 Clients
-                  p
-                    | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
-                .owl-carousel.clients-carousel
-                  img(src='img/clients/client-1.png' alt='')
-                  img(src='img/clients/client-2.png' alt='')
-                  img(src='img/clients/client-3.png' alt='')
-                  img(src='img/clients/client-4.png' alt='')
-                  img(src='img/clients/client-5.png' alt='')
-                  img(src='img/clients/client-6.png' alt='')
-                  img(src='img/clients/client-7.png' alt='')
-                  img(src='img/clients/client-8.png' alt='')
-            // #clients
+                    .row
+                        .col-lg-12.content
+                            h5
+                                | Продуктовый менеджмент, техническая и продуктовая аналитика, маркетинг, технологии, аналитические системы и программирование настолько тесно вплетены в друг друга, что у вас совершенно точно должны быть закрыты все эти роли,
+                                | либо отделами, либо фрилансерами на аутсорсе. Либо #[br]
+                                strong вы можете сэкономить деньги на зарплатах и время на коммуникациях между этими ролями и нанять одного сфокусированного на продакт-маркетинге профессионала.
+          
             //
               ==========================
               Our Portfolio Section
@@ -424,7 +372,7 @@ html
                                 .card
                                     #heading1.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='false' aria-controls='collapse1')
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='false' aria-controls='collapse1')
                                                 | В: Сколько это будет стоить?
                                     #collapse1.collapse(aria-labelledby='heading1' data-parent='#faq')
                                         .card-body
@@ -433,7 +381,7 @@ html
                                 .card
                                     #heading2.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
                                                 | В: Вы все это делаете один?
                                     #collapse2.collapse(aria-labelledby='headingTwo' data-parent='#faq')
                                         .card-body
@@ -441,7 +389,7 @@ html
                                 .card
                                     #heading3.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
                                                 | В: Сколько это будет длиться?
                                     #collapse3.collapse(aria-labelledby='heading3' data-parent='#faq')
                                         .card-body
@@ -450,7 +398,7 @@ html
                                 .card
                                     #heading4.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4')
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4')
                                                 | В: Как это будет юридически структурировано?
                                     #collapse4.collapse(aria-labelledby='heading4' data-parent='#faq')
                                         .card-body
@@ -458,15 +406,15 @@ html
                                 .card
                                     #heading5.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
-                                                | В: Давайте сначала вы приведете клиентов, а потом мы займемся продуктовой аналитикой, дадим доступы в наши системы.
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                                                | В: Давайте сначала вы приведете клиентов, а потом займемся продуктовой аналитикой, дадим доступы в наши системы.
                                     #collapse5.collapse(aria-labelledby='heading5' data-parent='#faq')
                                         .card-body
                                             | Нет. Это эффективно не работает. За шальными деньгами не гонюсь.
                                 .card
                                     #heading6.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
                                                 | В: Как будет происходить взаимодействие?
                                     #collapse6.collapse(aria-labelledby='heading6' data-parent='#faq')
                                         .card-body
@@ -474,68 +422,17 @@ html
                                 .card
                                     #heading7.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
                                                 | В: Некоторые моменты хотелось бы прояснить...
                                     #collapse7.collapse(aria-labelledby='heading7' data-parent='#faq')
                                         .card-body
                                             | Свяжитесь со мной любым удобным способом #[a(href='') форма связи] и мы их устраним. )
-            //
-              ==========================
-              Testimonials Section
-              ============================
-            //- section#testimonials.wow.fadeInUp
-            //-   .container
-            //-     .section-header
-            //-       h2 Отзывы
-            //-       p
-            //-         | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
-            //-     .owl-carousel.testimonials-carousel
-            //-       .testimonial-item
-            //-         p
-            //-           img.quote-sign-left(src='img/quote-sign-left.png' alt='')
-            //-           |                 Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-            //-           img.quote-sign-right(src='img/quote-sign-right.png' alt='')
-            //-         img.testimonial-img(src='img/testimonial-1.jpg' alt='')
-            //-         h3 Saul Goodman
-            //-         h4 Ceo &amp; Founder
-            //-       .testimonial-item
-            //-         p
-            //-           img.quote-sign-left(src='img/quote-sign-left.png' alt='')
-            //-           |                 Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-            //-           img.quote-sign-right(src='img/quote-sign-right.png' alt='')
-            //-         img.testimonial-img(src='img/testimonial-2.jpg' alt='')
-            //-         h3 Sara Wilsson
-            //-         h4 Designer
-            //-       .testimonial-item
-            //-         p
-            //-           img.quote-sign-left(src='img/quote-sign-left.png' alt='')
-            //-           |                 Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-            //-           img.quote-sign-right(src='img/quote-sign-right.png' alt='')
-            //-         img.testimonial-img(src='img/testimonial-3.jpg' alt='')
-            //-         h3 Jena Karlis
-            //-         h4 Store Owner
-            //-       .testimonial-item
-            //-         p
-            //-           img.quote-sign-left(src='img/quote-sign-left.png' alt='')
-            //-           |                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-            //-           img.quote-sign-right(src='img/quote-sign-right.png' alt='')
-            //-         img.testimonial-img(src='img/testimonial-4.jpg' alt='')
-            //-         h3 Matt Brandon
-            //-         h4 Freelancer
-            //-       .testimonial-item
-            //-         p
-            //-           img.quote-sign-left(src='img/quote-sign-left.png' alt='')
-            //-           |                 Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-            //-           img.quote-sign-right(src='img/quote-sign-right.png' alt='')
-            //-         img.testimonial-img(src='img/testimonial-5.jpg' alt='')
-            //-         h3 John Larson
-            //-         h4 Entrepreneur
-            // #testimonials
+ 
             //
               ==========================
               Call To Action Section
               ============================
-            section#call-to-action.wow.fadeInUp
+            //section#call-to-action.wow.fadeInUp
                 .container
                     .row
                         .col-lg-9.text-center.text-lg-left
@@ -549,7 +446,7 @@ html
               ==========================
               Our Team Section
               ============================
-            section#team.wow.fadeInUp
+            //section#team.wow.fadeInUp
               .container
                 .section-header
                   h2 Обо мне
@@ -623,7 +520,7 @@ html
               ==========================
               Contact Section
               ============================
-            section#contact.wow.fadeInUp
+            //section#contact.wow.fadeInUp
               .container
                 .section-header
                   h2 Contact Us
@@ -690,7 +587,7 @@ html
                     |  by BootstrapMade
         // #footer
         a.back-to-top(href='#')
-          i.fa.fa-chevron-up
+            i.fa.fa-chevron-up
         // JavaScript Libraries
         script(src='lib/jquery/jquery.min.js')
         script(src='lib/jquery/jquery-migrate.min.js')
@@ -709,7 +606,7 @@ html
 
 
         // analytics modal
-        #analyticsModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='analyticsModalLabel' aria-hidden='true')
+        //#analyticsModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='analyticsModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
@@ -722,7 +619,7 @@ html
                         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes
         // Customer Profile Modal
-        #customerProfileModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='customerProfileModalLabel' aria-hidden='true')
+        //#customerProfileModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='customerProfileModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
@@ -738,7 +635,7 @@ html
                         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes
         // Creative Modal
-        #creativeModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='creativeModalLabel' aria-hidden='true')
+        //#creativeModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='creativeModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
@@ -751,7 +648,7 @@ html
                         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes
         // Customer Profile Modal
-        #campaignModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='campaignModalLabel' aria-hidden='true')
+        //#campaignModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='campaignModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
@@ -765,7 +662,7 @@ html
                         button.btn.btn-primary(type='button') Save changes
         
         // landing Modal
-        #landingModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='landingModalLabel' aria-hidden='true')
+        //#landingModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='landingModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
@@ -779,7 +676,7 @@ html
                         button.btn.btn-primary(type='button') Save changes
         
         // context Modal
-        #contextModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contextModalLabel' aria-hidden='true')
+        //#contextModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contextModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
@@ -794,7 +691,7 @@ html
         
 
         // context Modal
-        #feedbackModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedbackModalLabel' aria-hidden='true')
+        //#feedbackModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedbackModalLabel' aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
