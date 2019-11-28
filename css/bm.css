@@ -28,3 +28,16 @@
 #services .box {
     min-height: 260px;
 }
+
+/* ссылки в модальных окнах */
+.modal-body a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* затемнения на кейсах и указатель мышки */
+#portfolio .portfolio-item .portfolio-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
