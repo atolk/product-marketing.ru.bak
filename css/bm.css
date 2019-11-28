@@ -23,3 +23,8 @@
 #about .content.pm-bad-news i {
     color: red;
 }
+
+/* минимальная высота карточек с декомпозицией работ */
+#services .box {
+    min-height: 260px;
+}
