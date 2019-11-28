@@ -85,7 +85,10 @@ html
                         li
                             a(href='#portfolio', data-category='navmenu', data-label='navmenu-cases') Кейсы
                         li
+                            a(href='#faq-section', data-category='navmenu', data-label='navmenu-contact') FAQ (inc $)
+                        li
                             a(href='#contact', data-category='navmenu', data-label='navmenu-contact') Контакты
+
                         // li
                             a(href='#team') Team
                         // li.menu-has-children
@@ -349,71 +352,6 @@ html
                             | либо отделами, либо фрилансерами на аутсорсе. Либо #[br]
                             strong вы можете сэкономить деньги на зарплатах и время на коммуникациях между этими ролями и нанять одного сфокусированного на продакт-маркетинге профессионала.
             
-            section
-                .container.py-3
-                    .section-header
-                        h2 Часто задаваемые вопросы
-                    .row
-                        .col-10.mx-auto
-                            #faqExample.accordion
-                                .card
-                                    #heading1.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='false' aria-controls='collapse1')
-                                                | В: Сколько это будет стоить?
-                                    #collapse1.collapse(aria-labelledby='heading1' data-parent='#faqExample')
-                                        .card-body
-                                            p Зависит от объема работы. Базовый кейс: аудит, базовая аналитика + кампании в каком-либо (контекст + FB) - ориентировочно 30-50к рублей.
-                                            p Более масштабные задачи потребуют большей вовлеченности. О конкретных числах можно говорить после ознакомления с вашим продуктом, с вашими целями и составлением плана их достижения.
-                                .card
-                                    #heading2.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
-                                                | В: Вы все это делаете один?
-                                    #collapse2.collapse(aria-labelledby='headingTwo' data-parent='#faqExample')
-                                        .card-body
-                                            | Ключевые задачи я делаю сам. На отдельные части я могу привлекать своих партнеров с вашего согласия. Или вести коммуникацию с вашими исполнителями, обеспечивая весь цикл коммуникации: от постановки задачи, до контроля исполнения. Вы будете четко понимать кто что делает и сколько стоит эта работа.
-                                .card
-                                    #heading3.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
-                                                | В: Сколько это будет длиться?
-                                    #collapse3.collapse(aria-labelledby='heading3' data-parent='#faqExample')
-                                        .card-body
-                                            | Зависит от зрелости вашей инфраструктуры. По практике: от 2 до 4 недель занимает получение первых результатовdiv
-                                            | Я #[strong не беру одновременно больше двух проектов]. Важна ваша и собственная удовлетворенность в конечном результате. Вау-эффект.
-                                .card
-                                    #heading4.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4')
-                                                | В: Как это будет юридически структурировано?
-                                    #collapse4.collapse(aria-labelledby='heading4' data-parent='#faqExample')
-                                        .card-body
-                                            | Договор с ИП + NDA. Предоплата 30-50% в зависимости от объема работ.
-                                .card
-                                    #heading5.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
-                                                | В: Давайте сначала вы приведете клиентов, а потом мы займемся продуктовой аналитикой, дадим доступы в наши системы.
-                                    #collapse5.collapse(aria-labelledby='heading5' data-parent='#faqExample')
-                                        .card-body
-                                            | Нет. Это эффективно не работает. За шальными деньгами не гонюсь.
-                                .card
-                                    #heading6.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
-                                                | В: Как будет происходить взаимодействие?
-                                    #collapse6.collapse(aria-labelledby='heading6' data-parent='#faqExample')
-                                        .card-body
-                                            | В любом удобном вам канале. Важно, чтобы вы обеспечили оперативную коммуникацию. Я буду отчитываться о каждом проделанном шаге, также вы будете получать уведомления от скриптов о преодолении важных вех или достижении локальных целей.
-                                .card
-                                    #heading7.card-header.p-2
-                                        h5.mb-0
-                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
-                                                | В: Некоторые моменты хотелось бы прояснить...
-                                    #collapse7.collapse(aria-labelledby='heading7' data-parent='#faqExample')
-                                        .card-body
-                                            | Свяжитесь со мной любым удобным способом #[a(href='') форма связи] и мы их устраним. )
             
             //
               ==========================
@@ -456,6 +394,13 @@ html
                                             h2.wow.fadeInUp Полный цикл продуктовой аналитики и маркетинга
                         .col-lg-3.col-md-4
                             .portfolio-item.wow.fadeInUp
+                                a(data-toggle="modal", data-target="#caseAdvancedMarketingModal")
+                                    img(src='img/portfolio/case-product-market-research.png' alt='b2с Технологический маркетинг')
+                                    .portfolio-overlay
+                                        .portfolio-info
+                                            h2.wow.fadeInUp TBD Технологический маркетинг
+                        .col-lg-3.col-md-4
+                            .portfolio-item.wow.fadeInUp
                                 a(data-toggle="modal", data-target="#caseYoulaDDDHypoModal")
                                     img(src='img/portfolio/case-tech-analysis.png' alt='Технический анализ')
                                     .portfolio-overlay
@@ -469,6 +414,71 @@ html
                                         .portfolio-info
                                             h2.wow.fadeInUp Исследование потенциала отдельного продукта страховой компании
             // #portfolio
+            section#faq-section.wow.fadeInUp
+                .container.py-3
+                    .section-header
+                        h2 Часто задаваемые вопросы
+                    .row
+                        .col-10.mx-auto
+                            #faq.accordion
+                                .card
+                                    #heading1.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='false' aria-controls='collapse1')
+                                                | В: Сколько это будет стоить?
+                                    #collapse1.collapse(aria-labelledby='heading1' data-parent='#faq')
+                                        .card-body
+                                            p Зависит от объема работы. Базовый кейс: аудит, базовая аналитика + кампании в каком-либо (контекст + FB) - ориентировочно 30-50к рублей.
+                                            p Более масштабные задачи потребуют большей вовлеченности. О конкретных числах можно говорить после ознакомления с вашим продуктом, с вашими целями и составлением плана их достижения.
+                                .card
+                                    #heading2.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
+                                                | В: Вы все это делаете один?
+                                    #collapse2.collapse(aria-labelledby='headingTwo' data-parent='#faq')
+                                        .card-body
+                                            | Ключевые задачи я делаю сам. На отдельные части я могу привлекать своих партнеров с вашего согласия. Или вести коммуникацию с вашими исполнителями, обеспечивая весь цикл коммуникации: от постановки задачи, до контроля исполнения. Вы будете четко понимать кто что делает и сколько стоит эта работа.
+                                .card
+                                    #heading3.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
+                                                | В: Сколько это будет длиться?
+                                    #collapse3.collapse(aria-labelledby='heading3' data-parent='#faq')
+                                        .card-body
+                                            | Зависит от зрелости вашей инфраструктуры. По практике: от 2 до 4 недель занимает получение первых результатовdiv
+                                            | Я #[strong не беру одновременно больше двух проектов]. Важна ваша и собственная удовлетворенность в конечном результате. Вау-эффект.
+                                .card
+                                    #heading4.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4')
+                                                | В: Как это будет юридически структурировано?
+                                    #collapse4.collapse(aria-labelledby='heading4' data-parent='#faq')
+                                        .card-body
+                                            | Договор с ИП + NDA. Предоплата 30-50% в зависимости от объема работ.
+                                .card
+                                    #heading5.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                                                | В: Давайте сначала вы приведете клиентов, а потом мы займемся продуктовой аналитикой, дадим доступы в наши системы.
+                                    #collapse5.collapse(aria-labelledby='heading5' data-parent='#faq')
+                                        .card-body
+                                            | Нет. Это эффективно не работает. За шальными деньгами не гонюсь.
+                                .card
+                                    #heading6.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                                                | В: Как будет происходить взаимодействие?
+                                    #collapse6.collapse(aria-labelledby='heading6' data-parent='#faq')
+                                        .card-body
+                                            | В любом удобном вам канале. Важно, чтобы вы обеспечили оперативную коммуникацию. Я буду отчитываться о каждом проделанном шаге, также вы будете получать уведомления от скриптов о преодолении важных вех или достижении локальных целей.
+                                .card
+                                    #heading7.card-header.p-2
+                                        h5.mb-0
+                                            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                                                | В: Некоторые моменты хотелось бы прояснить...
+                                    #collapse7.collapse(aria-labelledby='heading7' data-parent='#faq')
+                                        .card-body
+                                            | Свяжитесь со мной любым удобным способом #[a(href='') форма связи] и мы их устраним. )
             //
               ==========================
               Testimonials Section
@@ -870,3 +880,23 @@ html
                             a.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank') полноэкранная версия в новом окне                            
                     .modal-footer
                         button.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal', data-action='close', data-label='modal-close-bottom') Закрыть
+        #caseAdvancedMarketingModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='caseAdvancedMarketingModalLabel', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h5#caseAdvancedMarketingModalLabel.modal-title B2C Технологический маркетинг
+                        button.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal', data-action='close', data-label='modal-close-top')
+                          span(aria-hidden='true') &times;
+                    .modal-body
+                        div.alert.alert-primary
+                            h3 TBD
+                        //-     h3 Как продуктовая аналитика в условиях крайне ограничиных данных выводится из технического анализа
+                        //-     h5 
+                        //-         a(href='https://vc.ru/promo/83456-youla-search', target='_blank') Пост о конкурсе на vc.ru
+                        //- div К сожалению, я не победил. ) Я пришел к выводу, что на основании данных такого качества, не проверив их происхождение и достоверность, строить гипотезы категорически нельзя и логически ушел в продуктовую аналитику, в то время как ожидания организаторов оказались в демонстрации узкого владения инструментами технического анализа.
+                        //-     | <iframe src="https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview" width="466" height="350"></iframe>
+                        //- div.text-center
+                        //-     a.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank') полноэкранная версия в новом окне                            
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal', data-action='close', data-label='modal-close-bottom') Закрыть
+
