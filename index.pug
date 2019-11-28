@@ -42,19 +42,19 @@ html
             .container.clearfix
                 .contact-info.float-left
                     i.fa.fa-envelope-o
-                    a(href='mailto:avt@product-marketing.ru') avt@product-marketing.ru
+                    a(href='mailto:avt@product-marketing.ru', data-category='topbar-contact', data-label='topbar-email') avt@product-marketing.ru
                     
                 .social-links.float-right
                     // a.twitter(href='#')
                         i.fa.fa-twitter
-                    a.phone(href="tel:+79067577826", target="_blank") 
-                        i.fa.fa-phone +7 (906) 757-78-26
+                    //a.phone(href="tel:+79067577826", target="_blank") 
+                        i.fa.fa-phone &nbsp;+7 (906) 757-78-26
                     
-                    a.telegram(href='https://t.me/atolk_me', target='_blank')
+                    a.telegram(href='https://t.me/atolk_me', target='_blank', data-category='topbar-contact', data-label='topbar-telegram')
                         i.fa.fa-telegram
-                    a.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank')
+                    a.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank', data-category='topbar-contact', data-label='topbar-whatsapp')
                         i.fa.fa-whatsapp
-                    a.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank')
+                    a.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank', data-category='topbar-contact', data-label='topbar-facebook')
                         i.fa.fa-facebook
                     // a.instagram(href='#')
                         i.fa.fa-instagram
@@ -70,20 +70,22 @@ html
             .container
                 #logo.pull-left
                     h1
-                        a.scrollto(href='#body') Product
+                        a.scrollto(href='#body', data-category='navmenu', data-label='headerlogo') Product
                             span Marketing
                         // Uncomment below if you prefer to use an image logo
                         // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
                 nav#nav-menu-container
                     ul.nav-menu
                         li.menu-active 
-                            a(href='#body') В начало
+                            a(href='#body', data-category='navmenu', data-label='navmenu-home') В начало
                         li
-                            a(href='#about') ЧТО мы делаем
+                            a(href='#about', data-category='navmenu', data-label='navmenu-what') ЧТО мы делаем
                         li
-                            a(href='#services') КАК мы делаем
+                            a(href='#services', data-category='navmenu', data-label='navmenu-how') КАК мы делаем
                         li
-                            a(href='#portfolio') Кейсы
+                            a(href='#portfolio', data-category='navmenu', data-label='navmenu-cases') Кейсы
+                        li
+                            a(href='#contact', data-category='navmenu', data-label='navmenu-contact') Контакты
                         // li
                             a(href='#team') Team
                         // li.menu-has-children
@@ -97,8 +99,6 @@ html
                                 a(href='#') Drop Down 4 
                             li
                                 a(href='#') Drop Down 5
-                        li
-                            a(href='#contact') Контакты
                 // #nav-menu-container
         // #header
         //
@@ -107,13 +107,7 @@ html
             ============================
         section#intro.wow.fadeIn
             .intro-content
-                img(src='/img/product-marketing-circle.svg')
-                //- h2 Создаем потоки
-                //-     br
-                //-     span ваших клиентов!
-                //- div
-                //-     a.btn-get-started.scrollto(href='#about') Приступить
-                //-     a.btn-projects.scrollto(href='#portfolio') Наши проекты
+                img(src='/img/product-marketing-circle.svg')    
             #intro-carousel.owl-carousel
                 .item(style="background-image: url('img/intro-carousel/1.jpg');")
                 .item(style="background-image: url('img/intro-carousel/2.jpg');")
@@ -124,14 +118,14 @@ html
         main#main
             //
                 ==========================
-                About Section
+                Что мы делаем
                 ============================
             section#about.wow.fadeInUp
                 .container
                     .row
                         .col-lg-6.content.pm-bad-news
                             h2 Что не так с привычным маркетингом
-                            h3
+                            // h3
                                 | Три фактора успеха
                             ul
                                 li
@@ -145,18 +139,23 @@ html
                                     | Игнорирование технологической составляющей маркетинговых кампаний, решений на основе данных и тестов.
                         .col-lg-6.content
                             h2 Продуктовый маркетинг
-                            h3
+                            // h3
                                 | Три фактора успеха
                             ul
                                 li
                                     i.ion-android-checkmark-circle
-                                    | Глубокое погружение в продукт и отрасль. В результаты прошедших кампаний. Построение клиентской воронки, CJM, в перфоманс конкурентов. Это бизис, необходимый, для выдвижения правильных продуктовых гипотез.
+                                    | Глубокое погружение в продукт и отрасль, в результаты прошедших кампаний. Построение клиентской воронки, CJM, в перфоманс конкурентов. Это бизис, необходимый, для выдвижения правильных продуктовых гипотез.
                                 li
                                     i.ion-android-checkmark-circle
                                     | Тонкая настройка аналитики и дашбордов. Метрики важные для вашего бизнеса, а не для маркетолога. Позволит увидеть поведение пользователей на вашем сайте, произвести сегментацию и лучше их узнать. Ощущение продукта позволяет выдвигать гипотезы. Объективные, скурпулезно собранные данные - подтверждать или опровергать их. Вся аналитическая инфраструктура и знание КАК и ПОЧЕМУ это работает останется с вами навсегда.
                                 li
                                     i.ion-android-checkmark-circle
                                     | Тестирование, тестирование, тестирование. Не существует единственного гениального правильного решения бизнес-задачи. Существуют только гипотезы и объективные статистически значимые данные их подтверждающие. Чем больше мы проведем тестов в единицу времени, тем скорее отыщется масштабируемый канал привлечения клиентов, а ваше понимание продукта и пользователях обоготится знаниями, основанными на данных.
+                    .section-header
+                        h2 Результат
+                        h3 Кратное #[strong снижение стоимости привлечения клиента (customer acquisition cost)] за счет управляемого, основанного на данных продуктового маркетинга.
+                        
+                        
             // #about
             //
                 ==========================
@@ -190,7 +189,7 @@ html
                 .container
                     .section-header
                         h2 Декомпозиция задач
-                        h3 Это не про маркетинг, это про ваш продукт.
+                        h3 Это не узкий маркетинг, это комплексно про ваш продукт и каналы.
                         h3 Продуктовые инсайты и маркетинг &mdash; неделимые сущности.
                     .row
                         .col-lg-12.content
@@ -216,7 +215,7 @@ html
                                     a(href='') Ui/Ux и SEO аудит лэндинга
                                 p.description
                                     | Лэндинг - это витрина вашего продукта. Он обязательно должен быть удобный, логичный и позволять совершить целевое действие. Если у вас нет лэндинга, мы можем быстро и дешево сделать его для вас.
-                                button.btn.btn-light.float-right(data-toggle="modal", data-target="#feedbackModal") подробнее
+                                // button.btn.btn-light.float-right(data-toggle="modal", data-target="#landingModal") подробнее
                         
                         .col-lg-6
                             .box.wow.fadeInLeft
@@ -226,7 +225,7 @@ html
                                     a(href='') Тонкая настройка аналитики
                                 p.description
                                     | Мы настроим вашу аналитическую систему (Я.Метрику или Google analytics) на отслеживание поведения пользователей у вас на портале. Это фундамент всей работы.
-                                button.btn.btn-light.float-right(data-toggle="modal", data-target="#analyticsModal") подробнее
+                                // button.btn.btn-light.float-right(data-toggle="modal", data-target="#analyticsModal") подробнее
                                 
                         ///////////////////////////////////
                         .col-lg-6
@@ -237,7 +236,7 @@ html
                                     a(href='') Аналитика существующей аудитории и ее сегментация
                                 p.description
                                     | На основании аналитических данных мы выделяем пользовательские сегменты, в каждом из которых строим поведенческий профиль.
-                                button.btn.btn-light.float-right(data-toggle="modal", data-target="#customerProfileModal") подробнее
+                                // button.btn.btn-light.float-right(data-toggle="modal", data-target="#customerProfileModal") подробнее
                         .col-lg-6
                             .box.wow.fadeInLeft(data-wow-delay='0.2s')
                                 .icon
@@ -246,7 +245,7 @@ html
                                     a(href='') Креативы
                                 p.description
                                     | Под каждый пользовательский сегмент на основании профиля пользователя делаем несколько креативов, с фокусом на продуктовые ценности именно этой продуктовой группы.
-                                button.btn.btn-light.float-right(data-toggle="modal", data-target="#creativeModal") подробнее
+                                // button.btn.btn-light.float-right(data-toggle="modal", data-target="#creativeModal") подробнее
 
                         .col-lg-6
                             .box.wow.fadeInLeft
@@ -256,7 +255,7 @@ html
                                     a(href='') Запуск кампаний в контексте
                                 p.description
                                     | Запускаем кампании в Я.Директ и Google Ads
-                                button.btn.btn-light.float-right(data-toggle="modal", data-target="#contextModal") подробнее
+                                // button.btn.btn-light.float-right(data-toggle="modal", data-target="#contextModal") подробнее
 
                         .col-lg-6
                             .box.wow.fadeInRight(data-wow-delay='0.2s')
@@ -266,7 +265,7 @@ html
                                     a(href='') 
                                 p.description
                                     | Таргетируемся на выделенные ползовательские сегменты и запускаем сразу большое количество тестов в комбинации сегемент-таргетинг-креатив.
-                                button.btn.btn-light.float-right(data-toggle="modal", data-target="#campaignModal") подробнее
+                                // button.btn.btn-light.float-right(data-toggle="modal", data-target="#campaignModal") подробнее
             // #services
             
             // 
@@ -307,7 +306,48 @@ html
                                 | Вся построенная инфраструктура, документация к ней и понимание как работает каждая шестеренка в этом механизме останется с вами.
                                 | Никаких &laquo;левых&raquo; личных кабинетов и &laquo;черных ящиков&raquo;, когда вы не знаете что происходит и сколько #[strong НА САМОМ ДЕЛЕ] стоит клиент из канала. 
 
-            
+            section
+                .container
+                    .section-header
+                        h2 Почему вы можете на меня рассчитывать
+                    .row
+                        .col-lg-12.content
+                            ul.bm-ion-list
+                                li
+                                    i.ion-android-checkmark-circle
+                                    | #[strong Более 15 лет проектной работы] в самых разных ролях: от программиста, до руководителя проекта#[br]
+                                    | Через мои руки прошли не менее 100 проектов: от фантастических бизнес-планов, стартапов разного уровня зрелости, крепких и устойчивых малых бизнесов до крупных инфраструктурных проект в области ГЧП.
+                                    | 
+                                li 
+                                    i.ion-android-checkmark-circle
+                                    | #[strong Продуктовая аналитика - моя сильная компетенция]#[br]
+                                    | Следствие предыдущего пункта. 
+                                    | Закончил школу продактов Аркадия Морейниса, курсы Product.Vision "Школа треккеров", академию проектного менеджмента EY и множество курсов условно &laquo;второго эшелона&raquo;.
+                                    | Мной написаны 10-ки бизнес-планов, конкурентных анализов, инвестиционных обоснований, прогнозов, формализаций бизнес-процессов, технических заданий и прочей документации, необходимой для достижения проектных целей.
+                                    | Такая проектная насмотренность позволяет задавать правильные вопросы, увидеть типовые ошибки реализации, выдвигать незашоренные отраслевой спецификой проектные гипотезы о продукте и пользователях.
+                                    
+                                li 
+                                    i.ion-android-checkmark-circle
+                                    | #[strong Техническая аналитика - моя сильная компетенция]#[br]
+                                    | Во время занятий наукой (магистратура Финансовой академии) эта экспертиза, пожалуй, достигла своего пика. Посмотрите на мои научные публикации о микро-экономических моделях на #[a(href="https://elibrary.ru/author_items.asp?authorid=892224", target="_blank") elibrary.ru].
+                                    | Мной построены с нуля 10-ки аналитических систем, не ограничиваясь digital стандратами де-факто: Я.Метрика и Google analytics (действительные сертификаты). У меня обширнейшая база знаний всех основных инструментов и их &laquo;подводных камней&raquo;, мы не будем тратить ваше время на их преодоления. Все они уже преодолены. Помимо этого я &laquo;оброс&raquo; всевозможными скриптами для решения типовых задач. И то что менее подготовленный пользователь будет делать несколько дней вооружившись гуглом, я сделаю за пару часов.
+                                    | Скорее всего такая сложность (предсказательное моделирование) при проведении поведенческого анализа не понадобится, и мы ограничимся т.н. разведывательным анализом: метрики, сегменты и срезы, когорты, воронка, атрибуция. Но если понадобится, то есть готовые инструменты.
+                                li 
+                                    i.ion-android-checkmark-circle
+                                    | #[strong Маркетинг - моя сильная компетенция]#[br]
+                                    | Маркетинга отдельно от продукта не существует. Когда вы занимаетесь продуктовым анализом, вы занимаетесь маркетингом. Когда вы выдвигаете гипотезы о пользовательской мотивации - это тоже продуктовый маркетинг. Когда вы делайте post-servey - это тоже инструмент продуктового маркетинга.
+                                    | Хороший product manager всегда хороший маркетолог. Но не всегда наоборот. Чистый digital-маркетолог - это надстройка над интерфейсами рекламных каналов. В современном digital-маркетинге технологии (тесты, быстрые результаты и извлечение из них знаний) играют значительную роль. И по-этому...
+                                    
+                                li 
+                                    i.ion-android-checkmark-circle
+                                    | #[strong Технологии - моя сильная компетенция]#[br]
+                                    | Владею всеми необходимыми инструментами и нахожусь на острие технологий. Там где маркетолог будет давать задачу отделу программирования, я предпочту сделать это сам, чтобы получить результат быстрее. Скорость - это то что действительно имеет значение для реального неспящего бизнеса.
+                                    | Человек-швейцарский нож.
+                    .row.section-header
+                        h5
+                            | Продуктовый менеджмент, техническая и продуктовая аналитика, маркетинг, технологии, аналитические системы и программирование настолько тесно вплетены в друг друга, что у вас совершенно точно должны быть закрыты все эти роли,
+                            | либо отделами, либо фрилансерами на аутсорсе. Либо #[br]
+                            strong вы можете сэкономить деньги на зарплатах и время на коммуникациях между этими ролями и нанять одного сфокусированного на продакт-маркетинге профессионала.
             //
               ==========================
               Clients Section
@@ -333,69 +373,69 @@ html
               Our Portfolio Section
               ============================
             section#portfolio.wow.fadeInUp
-              .container
-                .section-header
-                  h2 Кейсы TBD
-                  p
-                    | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
-              .container-fluid
-                .row.no-gutters
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/1.jpg')
-                        img(src='img/portfolio/1.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Facebook/instagram кампания
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/2.jpg')
-                        img(src='img/portfolio/2.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 2
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/3.jpg')
-                        img(src='img/portfolio/3.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 3
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/4.jpg')
-                        img(src='img/portfolio/4.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 4
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/5.jpg')
-                        img(src='img/portfolio/5.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 5
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/6.jpg')
-                        img(src='img/portfolio/6.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 6
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/7.jpg')
-                        img(src='img/portfolio/7.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 7
-                  .col-lg-3.col-md-4
-                    .portfolio-item.wow.fadeInUp
-                      a.portfolio-popup(href='img/portfolio/8.jpg')
-                        img(src='img/portfolio/8.jpg' alt='')
-                        .portfolio-overlay
-                          .portfolio-info
-                            h2.wow.fadeInUp Portfolio Item 8
+                .container
+                    .section-header
+                        h2 Кейсы TBD
+                        p
+                            | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
+                .container-fluid
+                    .row.no-gutters
+                        .col-lg-3.col-md-4
+                            .portfolio-item.wow.fadeInUp
+                                a(data-toggle="modal", data-target="#caseProductAnalyticsModal")
+                                    img(src='img/portfolio/1.jpg' alt='')
+                                    .portfolio-overlay
+                                        .portfolio-info
+                                            h2.wow.fadeInUp Facebook/instagram кампания
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/2.jpg')
+                //-         img(src='img/portfolio/2.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 2
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/3.jpg')
+                //-         img(src='img/portfolio/3.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 3
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/4.jpg')
+                //-         img(src='img/portfolio/4.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 4
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/5.jpg')
+                //-         img(src='img/portfolio/5.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 5
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/6.jpg')
+                //-         img(src='img/portfolio/6.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 6
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/7.jpg')
+                //-         img(src='img/portfolio/7.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 7
+                //-   .col-lg-3.col-md-4
+                //-     .portfolio-item.wow.fadeInUp
+                //-       a.portfolio-popup(href='img/portfolio/8.jpg')
+                //-         img(src='img/portfolio/8.jpg' alt='')
+                //-         .portfolio-overlay
+                //-           .portfolio-info
+                //-             h2.wow.fadeInUp Portfolio Item 8
             // #portfolio
             //
               ==========================
@@ -630,11 +670,11 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Modal title
+                        h5#analyticsModalLabel.modal-title Аналитика существующей аудитории и ее сегментация
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
-                        | ...
+                        | И
                     .modal-footer
                         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes
@@ -643,11 +683,14 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Modal title
+                        h5#customerProfileModalLabel.modal-title Modal title
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
-                        | ...
+                        p 
+                            | Мы тратим существенное количество времени на изучение имеющихся данных о взаимодействии вашей аудитории с порталом/лэндингом.
+                            | 
+                        p 
                     .modal-footer
                         button.btn.btn-secondary(type='button' data-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes
@@ -656,7 +699,7 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Modal title
+                        h5#creativeModalLabel.modal-title Modal title
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
@@ -669,7 +712,7 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Modal title
+                        h5#campaignModalLabel.modal-title Modal title
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
@@ -683,7 +726,7 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Modal title
+                        h5#landingModalLabel.modal-title Modal title
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
@@ -697,7 +740,7 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Modal title
+                        h5#contextModalLabel.modal-title Modal title
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
@@ -712,8 +755,35 @@ html
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h5#exampleModalLabel.modal-title Форма связи
+                        h5#feedbackModalLabel.modal-title Форма связи
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
+                          span(aria-hidden='true') &times;
+                    .modal-body
+                        div.alert.alert-info
+                            | Вы можете связаться со мной в телеграмме, whatsup, facebook по ссылкам ниже или оставить ваши контактный email и я свяжусь с вами сам.
+                        form.contactForm(action="", method="post", role="form")
+                            .form-group
+                                label.col-form-label(for="inputName") Ваше имя:
+                                .col-sm-10 
+                                    input.form-control.form-control-lg(type="text", placeholder="Как к вам обращаться?")
+                            .form-group
+                                label.col-form-label(for="inputEmail") email:
+                                .col-sm-10 
+                                    input.form-control.form-control-lg(type="email", placeholder="ваш e-mail", data-rule='email', data-msg='Пожалуйста введите корректный email')
+                                    .validation
+                            .form-group
+                                label.col-form-label(for="inputMessage") Сообщение:
+                                textarea#inputMessage.form-control
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-dismiss='modal') Отменить
+                        button.btn.btn-primary(type='button') Отправить
+
+        #caseProductAnalyticsModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='productAnalyticsModalLabel', aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h5#productAnalyticsModalLabel.modal-title B2B2C Контент-маркетинг агенство
+                        button.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal', data-action='close', data-label='modal-close-top')
                           span(aria-hidden='true') &times;
                     .modal-body
                         div.alert.alert-info
