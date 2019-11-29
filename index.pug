@@ -42,7 +42,7 @@ html
             .container.clearfix
                 .contact-info.float-left
                     i.fa.fa-envelope-o
-                    a(href='mailto:avt@product-marketing.ru', data-category='topbar-contact', data-label='topbar-email') avt@product-marketing.ru
+                    a.pm-track(href='mailto:avt@product-marketing.ru', data-category='topbar-contact', data-label='topbar-email') avt@product-marketing.ru
                     
                 .social-links.float-right
                     // a.twitter(href='#')
@@ -50,11 +50,11 @@ html
                     //a.phone(href="tel:+79067577826", target="_blank") 
                         i.fa.fa-phone &nbsp;+7 (906) 757-78-26
                     
-                    a.telegram(href='https://t.me/atolk_me', target='_blank', data-category='topbar-contact', data-label='topbar-telegram')
+                    a.pm-track.telegram(href='https://t.me/atolk_me', target='_blank', data-category='topbar-contact', data-label='topbar-telegram')
                         i.fa.fa-telegram
-                    a.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank', data-category='topbar-contact', data-label='topbar-whatsapp')
+                    //a.pm-track.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank', data-category='topbar-contact', data-label='topbar-whatsapp')
                         i.fa.fa-whatsapp
-                    a.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank', data-category='topbar-contact', data-label='topbar-facebook')
+                    a.pm.track.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank', data-category='topbar-contact', data-label='topbar-facebook')
                         i.fa.fa-facebook
                     // a.instagram(href='#')
                         i.fa.fa-instagram
@@ -70,22 +70,22 @@ html
             .container
                 #logo.pull-left
                     h1
-                        a.scrollto(href='#body', data-category='navmenu', data-label='headerlogo') Product
+                        a.pm-track.scrollto(href='#body', data-category='navmenu', data-label='navmenu-headerlogo') Product
                             span Marketing
                         // Uncomment below if you prefer to use an image logo
                         // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
                 nav#nav-menu-container
                     ul.nav-menu                        
                         li
-                            a(href='#about', data-category='navmenu', data-label='navmenu-what') ЧТО мы делаем
+                            a.pm-track(href='#about', data-category='navmenu', data-label='navmenu-what') ЧТО мы делаем
                         li
-                            a(href='#services', data-category='navmenu', data-label='navmenu-how') КАК мы делаем
+                            a.pm-track(href='#services', data-category='navmenu', data-label='navmenu-how') КАК мы делаем
                         li
-                            a(href='#portfolio', data-category='navmenu', data-label='navmenu-cases') Кейсы
+                            a.pm-track(href='#portfolio', data-category='navmenu', data-label='navmenu-cases') Кейсы
                         li
-                            a(href='#faq-section', data-category='navmenu', data-label='navmenu-contact') FAQ (inc $)
+                            a.pm-track(href='#faq-section', data-category='navmenu', data-label='navmenu-faq') FAQ (inc $)
                         li
-                            a(href='#contact', data-category='navmenu', data-label='navmenu-contact') Контакты
+                            a.pm-track(href='#contact', data-category='navmenu', data-label='navmenu-about') Обо мне
 
                         // li
                             a(href='#team') Team
@@ -161,7 +161,7 @@ html
                     .col-lg-6.text-center
                         h5.cta-title Остались вопросы? Готовы начать?
                     .col-lg-6.cta-center.d-flex
-                        a.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal") Свяжитесь со мной
+                        a.pm-track.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal", data-category='feedback-form', data-label='feedback-form-1') Свяжитесь со мной
             
             section#services
                 .container
@@ -258,28 +258,28 @@ html
                     .row 
                         .col-lg-3.col-md-4
                             .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseProductAnalyticsModal")
+                                a.pm-track(data-toggle="modal", data-target="#caseProductAnalyticsModal", data-category='cases', data-label='cases-prod-analysis')
                                     img(src='img/portfolio/case-product-management.png' alt='b2bс Product management')
                                     .portfolio-overlay
                                         .portfolio-info
                                             h2.wow.fadeInUp Полный цикл продуктовой аналитики и маркетинга
                         .col-lg-3.col-md-4
                             .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseAdvancedMarketingModal")
+                                a.pm-track(data-toggle="modal", data-target="#caseAdvancedMarketingModal", data-category='cases', data-label='cases-tech-marketing')
                                     img(src='img/portfolio/case-product-market-research.png' alt='b2с Технологический маркетинг')
                                     .portfolio-overlay
                                         .portfolio-info
                                             h2.wow.fadeInUp TBD Технологический маркетинг
                         .col-lg-3.col-md-4
                             .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseYoulaDDDHypoModal")
-                                    img(src='img/portfolio/case-tech-analysis.png' alt='Технический анализ')
+                                a.pm-track(data-toggle="modal", data-target="#caseYoulaDDDHypoModal")
+                                    img(src='img/portfolio/case-tech-analysis.png' alt='Технический анализ', data-category='cases', data-label='cases-youla')
                                     .portfolio-overlay
                                         .portfolio-info
                                             h2.wow.fadeInUp Продуктовая аналитика Юлы
                         .col-lg-3.col-md-4
                             .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseProductMarketResearchModal")
+                                a.pm-track(data-toggle="modal", data-target="#caseProductMarketResearchModal", data-category='cases', data-label='cases-market-research')
                                     img(src='img/portfolio/case-product-market-research.png' alt='b2с исследование продуктового потенциала')
                                     .portfolio-overlay
                                         .portfolio-info
@@ -291,7 +291,7 @@ html
                     .col-lg-6.text-center
                         h5.cta-title Остались вопросы? Готовы начать?
                     .col-lg-6.cta-center.d-flex
-                        a.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal") Свяжитесь со мной
+                        a.pm-track.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal", data-category='feedback-form', data-label='feedback-form-2') Свяжитесь со мной
 
             section
                 .container
@@ -359,23 +359,23 @@ html
                         .col-lg-6.personal-info
                             ul
                                 li
-                                    a(href='mailto:avt@product-marketing.ru', data-category='contact', data-label='bottom-email')
+                                    a.pm-track(href='mailto:avt@product-marketing.ru', data-category='about-contact', data-label='about-contact-email')
                                         i.fa.fa-envelope-o
                                         |&nbsp;avt@product-marketing.ru
                                 
                                 li
-                                    a.telegram(href='https://t.me/atolk_me', target='_blank', data-category='contact', data-label='bottom-telegram')
+                                    a.pm-track.telegram(href='https://t.me/atolk_me', target='_blank', data-category='about-contact', data-label='about-contact-telegram')
                                         i.fa.fa-telegram 
                                         | &nbsp; telegram
                                     //a.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank', data-category='topbar-contact', data-label='topbar-whatsapp')
                                         i.fa.fa-whatsapp
                                 li
-                                    a.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank', data-category='contact', data-label='bottom-facebook')
+                                    a.pm-track.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank', data-category='about-contact', data-label='about-contact-facebook')
                                         i.fa.fa-facebook
                                         | &nbsp;facebook
 
                                 li
-                                    a.web(href='https://atolk.me', target='_blank', data-category='contact', data-label='bottom-web')
+                                    a.pm-track.web(href='https://atolk.me', target='_blank', data-category='about-contact', data-label='about-contact-web')
                                         i.fa.fa-globe
                                         | &nbsp;blog
             
@@ -433,7 +433,7 @@ html
                                 .card
                                     #heading1.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='false' aria-controls='collapse1')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='false' aria-controls='collapse1', data-category='faq', data-label='faq-1')
                                                 | В: Сколько это будет стоить?
                                     #collapse1.collapse(aria-labelledby='heading1' data-parent='#faq')
                                         .card-body
@@ -442,7 +442,7 @@ html
                                 .card
                                     #heading2.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2', data-category='faq', data-label='faq-2')
                                                 | В: Вы все это делаете один?
                                     #collapse2.collapse(aria-labelledby='headingTwo' data-parent='#faq')
                                         .card-body
@@ -450,7 +450,7 @@ html
                                 .card
                                     #heading3.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3', data-category='faq', data-label='faq-3')
                                                 | В: Сколько это будет длиться?
                                     #collapse3.collapse(aria-labelledby='heading3' data-parent='#faq')
                                         .card-body
@@ -459,7 +459,7 @@ html
                                 .card
                                     #heading4.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4', data-category='faq', data-label='faq-4')
                                                 | В: Как это будет юридически структурировано?
                                     #collapse4.collapse(aria-labelledby='heading4' data-parent='#faq')
                                         .card-body
@@ -467,7 +467,7 @@ html
                                 .card
                                     #heading5.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5', data-category='faq', data-label='faq-5')
                                                 | В: Давайте сначала вы приведете клиентов, а потом займемся продуктовой аналитикой, дадим доступы в наши системы.
                                     #collapse5.collapse(aria-labelledby='heading5' data-parent='#faq')
                                         .card-body
@@ -475,7 +475,7 @@ html
                                 .card
                                     #heading6.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6', data-category='faq', data-label='faq-6')
                                                 | В: Как будет происходить взаимодействие?
                                     #collapse6.collapse(aria-labelledby='heading6' data-parent='#faq')
                                         .card-body
@@ -483,7 +483,7 @@ html
                                 .card
                                     #heading7.card-header.p-2
                                         h5.mb-0
-                                            button.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                                            button.pm-track.btn.btn-link.collapsed.text-left(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7', data-category='faq', data-label='faq-7')
                                                 | В: Некоторые моменты хотелось бы прояснить...
                                     #collapse7.collapse(aria-labelledby='heading7' data-parent='#faq')
                                         .card-body
@@ -498,7 +498,7 @@ html
                     .col-lg-6.text-center
                         h5.cta-title Остались вопросы? Готовы начать?
                     .col-lg-6.cta-center.d-flex
-                        a.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal") Свяжитесь со мной
+                        a.pm-track.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal", data-category='feedback-form', data-label='feedback-form-1') Свяжитесь со мной
                     //.row
                         //.col-lg-9.text-center.text-lg-left
                             h3.cta-title Свяжитесь со мной
@@ -579,10 +579,10 @@ html
                       You can delete the links only if you purchased the pro version.
                       Licensing information: https://bootstrapmade.com/license/
                       Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
-                    a(href='https://bootstrapmade.com/') Free Bootstrap Templates
+                    a.pm-track(href='https://bootstrapmade.com/', target='_blank', data-category='footer', data-label='footer-theme') Free Bootstrap Templates
                     |  by BootstrapMade
         // #footer
-        a.back-to-top(href='#')
+        a.pm-track.back-to-top(href='#', data-category='navmenu', data-label='navmenu-gototop')
             i.fa.fa-chevron-up
         // JavaScript Libraries
         script(src='lib/jquery/jquery.min.js')
@@ -606,7 +606,7 @@ html
                 .modal-content
                     .modal-header
                         h5#feedbackModalLabel.modal-title Форма связи
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                        button.pm-track.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal-feedback', data-label='modal-feedback-topclose')
                           span(aria-hidden='true') &times;
                     .modal-body
                         div.alert.alert-info Вы можете связаться со мной любым удобным способом: 
@@ -619,14 +619,14 @@ html
                             
 
                     .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Закрыть
+                        button.pm-track.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal-feedback', data-label='modal-feedback-bottomclose') Закрыть
 
         #caseProductAnalyticsModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='productAnalyticsModalLabel', aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
                         h5#productAnalyticsModalLabel.modal-title B2B2C Контент-маркетинг агенство
-                        button.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal', data-action='close', data-label='modal-close-top')
+                        button.pm-track.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal-prodAnalytics', data-action='close', data-label='modal-prodAnalytics-topclose')
                           span(aria-hidden='true') &times;
                     .modal-body
                         div.alert.alert-primary
@@ -638,15 +638,15 @@ html
                                 li Компания сделала несколько маркетинговых пивотов, переупаковав ценностное предложение.
                             | <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/embed?start=true&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         div.text-center
-                            a.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/pub?start=false&loop=false&delayms=5000', target='_blank') полноэкранная версия в новом окне                            
+                            a.pm-track.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/pub?start=false&loop=false&delayms=5000', target='_blank', data-category='modal-prodAnalytics', data-label='modal-prodAnalytics-slidelink') полноэкранная версия в новом окне
                     .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal', data-action='close', data-label='modal-close-bottom') Закрыть
+                        button.pm-track.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal-prodAnalytics', data-action='close', data-label='modal-prodAnalytics-bottomclose') Закрыть
         #caseProductMarketResearchModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='caseProductMarketResearchModalLabel', aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
                         h5#caseProductMarketResearchModalLabel.modal-title B2C Страховая компания
-                        button.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal', data-action='close', data-label='modal-close-top')
+                        button.pm.track.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal-marketResearch', data-action='close', data-label='modal-marketResearch-top-close')
                           span(aria-hidden='true') &times;
                     .modal-body
                         div.alert.alert-primary
@@ -658,16 +658,16 @@ html
                                 li Приняли решения о комплексном подходе к экспансии в каналы онлайн продаж.
                             | <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         div.text-center
-                            a.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/pub?start=false&loop=false&delayms=5000', target='_blank') полноэкранная версия в новом окне                            
+                            a.pm-track.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/pub?start=false&loop=false&delayms=5000', target='_blank', data-category='modal-marketResearch', data-label='modal-marketResearch-slidelink') полноэкранная версия в новом окне
                     .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal', data-action='close', data-label='modal-close-bottom') Закрыть
+                        button.pm-track.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal-marketResearch', data-action='close', data-label='modal-marketResearch-bottomclose') Закрыть
         
         #caseYoulaDDDHypoModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='caseYoulaDDDHypoModalLabel', aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
                         h5#caseYoulaDDDHypoModalLabel.modal-title Конкурс технического анализа mail.ru
-                        button.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal', data-action='close', data-label='modal-close-top')
+                        button.pm-track.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal-youla', data-action='close', data-label='modal-youla-topclose')
                           span(aria-hidden='true') &times;
                     .modal-body
                         div.alert.alert-primary
@@ -677,15 +677,15 @@ html
                         div К сожалению, я не победил. ) Я пришел к выводу, что на основании данных такого качества, не проверив их происхождение и достоверность, строить гипотезы категорически нельзя, и логически ушел в продуктовую аналитику, в то время как ожидания организаторов оказались в демонстрации узкого владения инструментами технического анализа.
                             | <iframe src="https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview" width="466" height="350"></iframe>
                         div.text-center
-                            a.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank') полноэкранная версия в новом окне                            
+                            a.pm-track.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank', data-category='modal-youla', data-label='modal-youla-slidelink') полноэкранная версия в новом окне
                     .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal', data-action='close', data-label='modal-close-bottom') Закрыть
+                        button.pm-track.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal-youla', data-action='close', data-label='modal-youla-bottomclose') Закрыть
         #caseAdvancedMarketingModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='caseAdvancedMarketingModalLabel', aria-hidden='true')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
                         h5#caseAdvancedMarketingModalLabel.modal-title B2C Технологический маркетинг
-                        button.close(type='button' data-dismiss='modal' aria-label='Close', data-category='modal', data-action='close', data-label='modal-close-top')
+                        button.pm-track.close(type='button', data-dismiss='modal', aria-label='Close', data-category='modal-techMarketing', data-action='close', data-label='modal-techMarketing-topclose')
                           span(aria-hidden='true') &times;
                     .modal-body
                         div.alert.alert-primary
@@ -698,7 +698,7 @@ html
                         //- div.text-center
                         //-     a.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank') полноэкранная версия в новом окне                            
                     .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal', data-action='close', data-label='modal-close-bottom') Закрыть
+                        button.pm-track.btn.btn-secondary(type='button' data-dismiss='modal', data-category='modal-techMarketing', data-action='close', data-label='modal-techMarketing-bottomclose') Закрыть
 
         // Start of Tawk.to Script 
         script(type="text/javascript")
