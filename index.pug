@@ -75,9 +75,7 @@ html
                         // Uncomment below if you prefer to use an image logo
                         // <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
                 nav#nav-menu-container
-                    ul.nav-menu
-                        li.menu-active 
-                            a(href='#body', data-category='navmenu', data-label='navmenu-home') В начало
+                    ul.nav-menu                        
                         li
                             a(href='#about', data-category='navmenu', data-label='navmenu-what') ЧТО мы делаем
                         li
@@ -158,6 +156,13 @@ html
                         h2 Результат
                         h3 Кратное #[strong снижение стоимости привлечения клиента (customer acquisition cost)] за счет управляемого, основанного на данных продуктового маркетинга.
   
+            section.call-to-action.wow.fadeInUp
+                .container.container-fluid
+                    .col-lg-6.text-center
+                        h5.cta-title Остались вопросы? Готовы начать?
+                    .col-lg-6.cta-center.d-flex
+                        a.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal") Свяжитесь со мной
+            
             section#services
                 .container
                     .section-header
@@ -239,7 +244,55 @@ html
                                 p.description
                                     | Таргетируемся на выделенные пользовательские сегменты и запускаем сразу большое количество тестов в комбинации сегмент-таргетинг-креатив.
                                 // button.btn.btn-light.float-right(data-toggle="modal", data-target="#campaignModal") подробнее
-            
+            //
+              ==========================
+              Our Portfolio Section
+              ============================
+            section#portfolio.wow.fadeInUp
+                .container
+                    .section-header
+                        h2 Кейсы TBD
+                        h4
+                            | Ниже представлены только самые свежие, наиболее типовые кейсы.
+                .container-fluid
+                    .row 
+                        .col-lg-3.col-md-4
+                            .portfolio-item.wow.fadeInUp
+                                a(data-toggle="modal", data-target="#caseProductAnalyticsModal")
+                                    img(src='img/portfolio/case-product-management.png' alt='b2bс Product management')
+                                    .portfolio-overlay
+                                        .portfolio-info
+                                            h2.wow.fadeInUp Полный цикл продуктовой аналитики и маркетинга
+                        .col-lg-3.col-md-4
+                            .portfolio-item.wow.fadeInUp
+                                a(data-toggle="modal", data-target="#caseAdvancedMarketingModal")
+                                    img(src='img/portfolio/case-product-market-research.png' alt='b2с Технологический маркетинг')
+                                    .portfolio-overlay
+                                        .portfolio-info
+                                            h2.wow.fadeInUp TBD Технологический маркетинг
+                        .col-lg-3.col-md-4
+                            .portfolio-item.wow.fadeInUp
+                                a(data-toggle="modal", data-target="#caseYoulaDDDHypoModal")
+                                    img(src='img/portfolio/case-tech-analysis.png' alt='Технический анализ')
+                                    .portfolio-overlay
+                                        .portfolio-info
+                                            h2.wow.fadeInUp Продуктовая аналитика Юлы
+                        .col-lg-3.col-md-4
+                            .portfolio-item.wow.fadeInUp
+                                a(data-toggle="modal", data-target="#caseProductMarketResearchModal")
+                                    img(src='img/portfolio/case-product-market-research.png' alt='b2с исследование продуктового потенциала')
+                                    .portfolio-overlay
+                                        .portfolio-info
+                                            h2.wow.fadeInUp Исследование потенциала отдельного продукта страховой компании
+            // #portfolio
+
+            section.call-to-action.wow.fadeInUp
+                .container.container-fluid
+                    .col-lg-6.text-center
+                        h5.cta-title Остались вопросы? Готовы начать?
+                    .col-lg-6.cta-center.d-flex
+                        a.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal") Свяжитесь со мной
+
             section
                 .container
                     .section-header
@@ -277,6 +330,55 @@ html
                                 | Вся построенная инфраструктура, документация к ней и понимание как работает каждая шестеренка в этом механизме останется с вами.
                                 | Никаких &laquo;левых&raquo; личных кабинетов и &laquo;черных ящиков&raquo;, когда вы не знаете, что происходит и сколько #[strong НА САМОМ ДЕЛЕ] стоит клиент из канала. 
 
+            //
+              ==========================
+              Our Team Section
+              ============================
+            section#team.wow.fadeInUp
+                .container
+                    .section-header
+                        h2 Обо мне
+                    .row
+                        .col-lg-6
+                            .member
+                                .pic
+                                    img(src='img/AVT.jpg' alt='Толкачев Антон Викторович')
+                                .details
+                                    h4 Антон Толкачев
+                                    span CPO
+                                    //.social
+                                        a(href='')
+                                            i.fa.fa-twitter
+                                        a(href='')
+                                            i.fa.fa-facebook
+                                        a(href='')
+                                            i.fa.fa-google-plus
+                                        a(href='')
+                                            i.fa.fa-linkedin
+                                
+                        .col-lg-6.personal-info
+                            ul
+                                li
+                                    a(href='mailto:avt@product-marketing.ru', data-category='contact', data-label='bottom-email')
+                                        i.fa.fa-envelope-o
+                                        |&nbsp;avt@product-marketing.ru
+                                
+                                li
+                                    a.telegram(href='https://t.me/atolk_me', target='_blank', data-category='contact', data-label='bottom-telegram')
+                                        i.fa.fa-telegram 
+                                        | &nbsp; telegram
+                                    //a.whatsapp(href='https://api.whatsapp.com/send?phone=+79067577826', target='_blank', data-category='topbar-contact', data-label='topbar-whatsapp')
+                                        i.fa.fa-whatsapp
+                                li
+                                    a.facebook(href='https://www.facebook.com/tolkachev.me', target='_blank', data-category='contact', data-label='bottom-facebook')
+                                        i.fa.fa-facebook
+                                        | &nbsp;facebook
+
+                                li
+                                    a.web(href='https://atolk.me', target='_blank', data-category='contact', data-label='bottom-web')
+                                        i.fa.fa-globe
+                                        | &nbsp;blog
+            
             section
                 .container
                     .section-header
@@ -321,47 +423,6 @@ html
                                 | либо отделами, либо фрилансерами на аутсорсе. Либо #[br]
                                 strong вы можете сэкономить деньги на зарплатах и время на коммуникациях между этими ролями и нанять одного сфокусированного на продакт-маркетинге профессионала.
           
-            //
-              ==========================
-              Our Portfolio Section
-              ============================
-            section#portfolio.wow.fadeInUp
-                .container
-                    .section-header
-                        h2 Кейсы TBD
-                        p
-                            | Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore
-                .container-fluid
-                    .row 
-                        .col-lg-3.col-md-4
-                            .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseProductAnalyticsModal")
-                                    img(src='img/portfolio/case-product-management.png' alt='b2bс Product management')
-                                    .portfolio-overlay
-                                        .portfolio-info
-                                            h2.wow.fadeInUp Полный цикл продуктовой аналитики и маркетинга
-                        .col-lg-3.col-md-4
-                            .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseAdvancedMarketingModal")
-                                    img(src='img/portfolio/case-product-market-research.png' alt='b2с Технологический маркетинг')
-                                    .portfolio-overlay
-                                        .portfolio-info
-                                            h2.wow.fadeInUp TBD Технологический маркетинг
-                        .col-lg-3.col-md-4
-                            .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseYoulaDDDHypoModal")
-                                    img(src='img/portfolio/case-tech-analysis.png' alt='Технический анализ')
-                                    .portfolio-overlay
-                                        .portfolio-info
-                                            h2.wow.fadeInUp Продуктовая аналитика Юлы
-                        .col-lg-3.col-md-4
-                            .portfolio-item.wow.fadeInUp
-                                a(data-toggle="modal", data-target="#caseProductMarketResearchModal")
-                                    img(src='img/portfolio/case-product-market-research.png' alt='b2с исследование продуктового потенциала')
-                                    .portfolio-overlay
-                                        .portfolio-info
-                                            h2.wow.fadeInUp Исследование потенциала отдельного продукта страховой компании
-            // #portfolio
             section#faq-section.wow.fadeInUp
                 .container.py-3
                     .section-header
@@ -426,95 +487,30 @@ html
                                                 | В: Некоторые моменты хотелось бы прояснить...
                                     #collapse7.collapse(aria-labelledby='heading7' data-parent='#faq')
                                         .card-body
-                                            | Свяжитесь со мной любым удобным способом (#[a(href='') форма связи]) и мы их устраним. )
+                                            | Свяжитесь со мной любым удобным способом (#[a(href='', data-toggle="modal", data-target="#feedbackModal") форма связи]) и мы их устраним. )
  
             //
               ==========================
               Call To Action Section
               ============================
-            //section#call-to-action.wow.fadeInUp
-                .container
-                    .row
-                        .col-lg-9.text-center.text-lg-left
+            section.call-to-action.wow.fadeInUp
+                .container.container-fluid
+                    .col-lg-6.text-center
+                        h5.cta-title Остались вопросы? Готовы начать?
+                    .col-lg-6.cta-center.d-flex
+                        a.cta-btn.align-middle(href='', data-toggle="modal", data-target="#feedbackModal") Свяжитесь со мной
+                    //.row
+                        //.col-lg-9.text-center.text-lg-left
                             h3.cta-title Свяжитесь со мной
                             p.cta-text
                                 | Напишите мне в телеграм 
-                        .col-lg-3.cta-btn-container.text-center
-                            a.cta-btn.align-middle(href='#') Call To Action
-            // #call-to-action
-            //
-              ==========================
-              Our Team Section
-              ============================
-            //section#team.wow.fadeInUp
-              .container
-                .section-header
-                  h2 Обо мне
-                .row
-                  .col-lg-3.col-md-6
-                    .member
-                      .pic
-                        img(src='img/team-1.jpg' alt='')
-                      .details
-                        h4 Walter White
-                        span Chief Executive Officer
-                        .social
-                          a(href='')
-                            i.fa.fa-twitter
-                          a(href='')
-                            i.fa.fa-facebook
-                          a(href='')
-                            i.fa.fa-google-plus
-                          a(href='')
-                            i.fa.fa-linkedin
-                  .col-lg-3.col-md-6
-                    .member
-                      .pic
-                        img(src='img/team-2.jpg' alt='')
-                      .details
-                        h4 Sarah Jhinson
-                        span Product Manager
-                        .social
-                          a(href='')
-                            i.fa.fa-twitter
-                          a(href='')
-                            i.fa.fa-facebook
-                          a(href='')
-                            i.fa.fa-google-plus
-                          a(href='')
-                            i.fa.fa-linkedin
-                  .col-lg-3.col-md-6
-                    .member
-                      .pic
-                        img(src='img/team-3.jpg' alt='')
-                      .details
-                        h4 William Anderson
-                        span CTO
-                        .social
-                          a(href='')
-                            i.fa.fa-twitter
-                          a(href='')
-                            i.fa.fa-facebook
-                          a(href='')
-                            i.fa.fa-google-plus
-                          a(href='')
-                            i.fa.fa-linkedin
-                  .col-lg-3.col-md-6
-                    .member
-                      .pic
-                        img(src='img/team-4.jpg' alt='')
-                      .details
-                        h4 Amanda Jepson
-                        span Accountant
-                        .social
-                          a(href='')
-                            i.fa.fa-twitter
-                          a(href='')
-                            i.fa.fa-facebook
-                          a(href='')
-                            i.fa.fa-google-plus
-                          a(href='')
-                            i.fa.fa-linkedin
+                        .col-lg-12.cta-btn-container.text-center
+                            
+            // .call-to-action
+            
+                                    
+
+                     
             // #team
             //
               ==========================
@@ -602,121 +598,28 @@ html
         // Contact Form JavaScript File
         script(src='contactform/contactform.js')
         // Template Main Javascript File
-        script(src='js/main.js')
-
-
-        // analytics modal
-        //#analyticsModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='analyticsModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#analyticsModalLabel.modal-title Аналитика существующей аудитории и ее сегментация
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
-                          span(aria-hidden='true') &times;
-                    .modal-body
-                        | И
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                        button.btn.btn-primary(type='button') Save changes
-        // Customer Profile Modal
-        //#customerProfileModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='customerProfileModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#customerProfileModalLabel.modal-title Modal title
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
-                          span(aria-hidden='true') &times;
-                    .modal-body
-                        p 
-                            | Мы тратим существенное количество времени на изучение имеющихся данных о взаимодействии вашей аудитории с порталом/лэндингом.
-                            | 
-                        p 
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                        button.btn.btn-primary(type='button') Save changes
-        // Creative Modal
-        //#creativeModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='creativeModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#creativeModalLabel.modal-title Modal title
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
-                          span(aria-hidden='true') &times;
-                    .modal-body
-                        | ...
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                        button.btn.btn-primary(type='button') Save changes
-        // Customer Profile Modal
-        //#campaignModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='campaignModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#campaignModalLabel.modal-title Modal title
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
-                          span(aria-hidden='true') &times;
-                    .modal-body
-                        | ...
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                        button.btn.btn-primary(type='button') Save changes
-        
-        // landing Modal
-        //#landingModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='landingModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#landingModalLabel.modal-title Modal title
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
-                          span(aria-hidden='true') &times;
-                    .modal-body
-                        | ...
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                        button.btn.btn-primary(type='button') Save changes
-        
-        // context Modal
-        //#contextModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contextModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
-                .modal-content
-                    .modal-header
-                        h5#contextModalLabel.modal-title Modal title
-                        button.close(type='button' data-dismiss='modal' aria-label='Close')
-                          span(aria-hidden='true') &times;
-                    .modal-body
-                        | ...
-                    .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-                        button.btn.btn-primary(type='button') Save chang
-        
+        script(src='js/main.js')      
 
         // context Modal
-        //#feedbackModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedbackModalLabel' aria-hidden='true')
-            .modal-dialog(role='document')
+        #feedbackModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedbackModalLabel' aria-hidden='true')
+            .modal-dialog.modal-lg(role='document')
                 .modal-content
                     .modal-header
                         h5#feedbackModalLabel.modal-title Форма связи
                         button.close(type='button' data-dismiss='modal' aria-label='Close')
                           span(aria-hidden='true') &times;
                     .modal-body
-                        div.alert.alert-info
-                            | Вы можете связаться со мной в телеграмме, whatsup, facebook по ссылкам ниже или оставить ваши контактный email и я свяжусь с вами сам.
-                        form.contactForm(action="", method="post", role="form")
-                            .form-group
-                                label.col-form-label(for="inputName") Ваше имя:
-                                .col-sm-10 
-                                    input.form-control.form-control-lg(type="text", placeholder="Как к вам обращаться?")
-                            .form-group
-                                label.col-form-label(for="inputEmail") email:
-                                .col-sm-10 
-                                    input.form-control.form-control-lg(type="email", placeholder="ваш e-mail", data-rule='email', data-msg='Пожалуйста введите корректный email')
-                                    .validation
-                            .form-group
-                                label.col-form-label(for="inputMessage") Сообщение:
-                                textarea#inputMessage.form-control
+                        div.alert.alert-info Вы можете связаться со мной любым удобным способом: 
+                            ul
+                                li телеграм
+                                li facebook
+                                li чат внизу слева экрана
+                            | или оставить заявку в форме ниже.
+                        div | <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGbPd28f4ugTprxcL24BJDPe2YI8KYxi2pScTXmYwWcaeHFw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            
+
                     .modal-footer
-                        button.btn.btn-secondary(type='button' data-dismiss='modal') Отменить
-                        button.btn.btn-primary(type='button') Отправить
+                        button.btn.btn-secondary(type='button' data-dismiss='modal') Закрыть
 
         #caseProductAnalyticsModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='productAnalyticsModalLabel', aria-hidden='true')
             .modal-dialog(role='document')
