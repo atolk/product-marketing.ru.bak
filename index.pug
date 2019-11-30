@@ -6,6 +6,15 @@ html
         meta(content='width=device-width, initial-scale=1.0' name='viewport')
         meta(content='Product marketing, продакт маркетинг, Product management, продакт менеджемент, продакт менеджер, оптимизация, аналитика, SEO, яндекс метрика, google analytics, facebook' name='keywords')
         meta(content='' name='description')
+
+        // open graph meta
+        meta(property='og:title', content='Продуктовый маркетинг')
+        meta(property='og:type', content='web')
+        meta(property='og:image', content='img/favicon.png')
+        meta(property='og:description', content='Продуктовая аналитика и маркетинг')
+        meta(property='og:locale', content='ru_RU')
+
+
         // Favicons
         link(href='img/favicon.png' rel='icon', type='image/png')
         link(href='img/apple-touch-icon.png' rel='apple-touch-icon')
@@ -251,7 +260,7 @@ html
             section#portfolio.wow.fadeInUp
                 .container
                     .section-header
-                        h2 Кейсы TBD
+                        h2 Кейсы
                         h4
                             | Ниже представлены только самые свежие, наиболее типовые кейсы.
                 .container-fluid
@@ -615,7 +624,7 @@ html
                                 li facebook
                                 li чат внизу слева экрана
                             | или оставить заявку в форме ниже.
-                        div | <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGbPd28f4ugTprxcL24BJDPe2YI8KYxi2pScTXmYwWcaeHFw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        div.embed-responsive.embed-responsive-4by3 | <iframe loading='lazy', src="https://docs.google.com/forms/d/e/1FAIpQLSeGbPd28f4ugTprxcL24BJDPe2YI8KYxi2pScTXmYwWcaeHFw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             
 
                     .modal-footer
@@ -636,7 +645,7 @@ html
                                 li Стоимость привлечения пользователя снизилась в 1.5-2 раза.
                                 li Эффективность маркетинговых бюджетов выросла в 3 раза.
                                 li Компания сделала несколько маркетинговых пивотов, переупаковав ценностное предложение.
-                            | <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/embed?start=true&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            div.embed-responsiveembed-responsive-4by3 | <iframe loading='lazy', src="https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/embed?start=true&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         div.text-center
                             a.pm-track.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/pub?start=false&loop=false&delayms=5000', target='_blank', data-category='modal-prodAnalytics', data-label='modal-prodAnalytics-slidelink') полноэкранная версия в новом окне
                     .modal-footer
@@ -656,7 +665,7 @@ html
                             ul
                                 li Отказались от идеи вывода в онлайн единственного, атомарного продукта (экономия более 2 млн.руб. без учета внутренних ресурсов).
                                 li Приняли решения о комплексном подходе к экспансии в каналы онлайн продаж.
-                            | <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            div.embed-responsive.embed-responsive-4by3 | <iframe loading='lazy', src="https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         div.text-center
                             a.pm-track.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/pub?start=false&loop=false&delayms=5000', target='_blank', data-category='modal-marketResearch', data-label='modal-marketResearch-slidelink') полноэкранная версия в новом окне
                     .modal-footer
@@ -675,7 +684,7 @@ html
                             h5 
                                 a(href='https://vc.ru/promo/83456-youla-search', target='_blank') Пост о конкурсе на vc.ru
                         div К сожалению, я не победил. ) Я пришел к выводу, что на основании данных такого качества, не проверив их происхождение и достоверность, строить гипотезы категорически нельзя, и логически ушел в продуктовую аналитику, в то время как ожидания организаторов оказались в демонстрации узкого владения инструментами технического анализа.
-                            | <iframe src="https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview" width="466" height="350"></iframe>
+                            div.embed-responsive.embed-responsive-4by3 | <iframe loading='lazy', src="https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview" width="466" height="350"></iframe>
                         div.text-center
                             a.pm-track.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank', data-category='modal-youla', data-label='modal-youla-slidelink') полноэкранная версия в новом окне
                     .modal-footer
