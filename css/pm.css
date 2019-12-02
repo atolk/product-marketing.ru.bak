@@ -88,3 +88,10 @@
 .personal-info ul a:hover{
     color:#50d8af;
 }
+
+.intro-content {
+    background-color: white;
+    background-image: url('/img/mainbackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
