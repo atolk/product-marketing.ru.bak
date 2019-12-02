@@ -17,7 +17,7 @@ html
 
         // Favicons
         link(href='img/favicon.png' rel='icon', type='image/png')
-        link(href='img/apple-touch-icon.png' rel='apple-touch-icon')
+        link(href='img/favicon.png' rel='apple-touch-icon')
         // Google Tag Manager
         script 
             | (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,19 +27,21 @@ html
             | })(window,document,'script','dataLayer','GTM-W28RDJ4');
 
         // Google Fonts
-        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700', 
+             rel='stylesheet')
         // Bootstrap CSS File
         link(href='lib/bootstrap/css/bootstrap.min.css' rel='stylesheet')
         // Libraries CSS Files
         link(href='lib/font-awesome/css/font-awesome.min.css' rel='stylesheet')
         link(href='lib/animate/animate.min.css' rel='stylesheet')
-        link(href='lib/ionicons/css/ionicons.min.css' rel='stylesheet')
-        link(href='lib/owlcarousel/assets/owl.carousel.min.css' rel='stylesheet')
+        //link(href='lib/owlcarousel/assets/owl.carousel.min.css' rel='stylesheet')
         link(href='lib/magnific-popup/magnific-popup.css' rel='stylesheet')
         link(href='lib/ionicons/css/ionicons.min.css' rel='stylesheet')
         // Main Stylesheet File
         link(href='css/style.css' rel='stylesheet')
         link(href='css/pm.css' rel='stylesheet')
+
+        script(src='/node_modules/lazysizes/lazysizes.min.js')
     body   
         #preloader
         //
@@ -118,12 +120,12 @@ html
         section#intro.wow.fadeIn
             .intro-content
                 img(src='/img/product-marketing-circle.svg')    
-            #intro-carousel.owl-carousel
-                .item(style="background-image: url('img/intro-carousel/1.jpg');")
-                .item(style="background-image: url('img/intro-carousel/2.jpg');")
-                .item(style="background-image: url('img/intro-carousel/3.jpg');")
-                .item(style="background-image: url('img/intro-carousel/4.jpg');")
-                .item(style="background-image: url('img/intro-carousel/5.jpg');")
+            //- #intro-carousel.owl-carousel
+            //-     .item(style="background-image: url('img/intro-carousel/1.jpg');")
+            //-     .item(style="background-image: url('img/intro-carousel/2.jpg');")
+            //-     .item(style="background-image: url('img/intro-carousel/3.jpg');")
+            //-     .item(style="background-image: url('img/intro-carousel/4.jpg');")
+            //-     .item(style="background-image: url('img/intro-carousel/5.jpg');")
         // #intro
         main#main
             //
@@ -597,17 +599,17 @@ html
         script(src='lib/jquery/jquery.min.js')
         script(src='lib/jquery/jquery-migrate.min.js')
         script(src='lib/bootstrap/js/bootstrap.bundle.min.js')
-        script(src='lib/easing/easing.min.js')
-        script(src='lib/superfish/hoverIntent.js')
+        //script(src='lib/easing/easing.min.js')
+        //script(src='lib/superfish/hoverIntent.js')
         script(src='lib/superfish/superfish.min.js')
         script(src='lib/wow/wow.min.js')
-        script(src='lib/owlcarousel/owl.carousel.min.js')
+        //script(src='lib/owlcarousel/owl.carousel.min.js')
         script(src='lib/magnific-popup/magnific-popup.min.js')
         script(src='lib/sticky/sticky.js')
         // Contact Form JavaScript File
-        script(src='contactform/contactform.js')
+        //script(src='contactform/contactform.js')
         // Template Main Javascript File
-        script(src='js/main.js')      
+        script(src='js/main.js')
 
         // context Modal
         #feedbackModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedbackModalLabel' aria-hidden='true')
@@ -624,7 +626,7 @@ html
                                 li facebook
                                 li чат внизу слева экрана
                             | или оставить заявку в форме ниже.
-                        div.embed-responsive.embed-responsive-4by3 | <iframe loading='lazy', src="https://docs.google.com/forms/d/e/1FAIpQLSeGbPd28f4ugTprxcL24BJDPe2YI8KYxi2pScTXmYwWcaeHFw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        // div | <iframe class="lazyload" src="https://docs.google.com/forms/d/e/1FAIpQLSeGbPd28f4ugTprxcL24BJDPe2YI8KYxi2pScTXmYwWcaeHFw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             
 
                     .modal-footer
@@ -645,7 +647,7 @@ html
                                 li Стоимость привлечения пользователя снизилась в 1.5-2 раза.
                                 li Эффективность маркетинговых бюджетов выросла в 3 раза.
                                 li Компания сделала несколько маркетинговых пивотов, переупаковав ценностное предложение.
-                            div.embed-responsiveembed-responsive-4by3 | <iframe loading='lazy', src="https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/embed?start=true&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            // div | <iframe class="lazyload" src="https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/embed?start=true&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         div.text-center
                             a.pm-track.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vSIzNftYTXau5ZbvEpB-FS0uqKXwcpIRvVzno_ueW3iFNYArV0eyD-d4moACZmmbWWU17wTtFauFd3N/pub?start=false&loop=false&delayms=5000', target='_blank', data-category='modal-prodAnalytics', data-label='modal-prodAnalytics-slidelink') полноэкранная версия в новом окне
                     .modal-footer
@@ -665,7 +667,7 @@ html
                             ul
                                 li Отказались от идеи вывода в онлайн единственного, атомарного продукта (экономия более 2 млн.руб. без учета внутренних ресурсов).
                                 li Приняли решения о комплексном подходе к экспансии в каналы онлайн продаж.
-                            div.embed-responsive.embed-responsive-4by3 | <iframe loading='lazy', src="https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            // div | <iframe class='lazyload' src="https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         div.text-center
                             a.pm-track.text-reset(href='https://docs.google.com/presentation/d/e/2PACX-1vS4BD8cHDD2Zu552JS3_tnxnCTrWxYIwBdiNEcbSX92gMeFFfV3w_BHRGmV8qDem60a2FZzjvgOTDUO/pub?start=false&loop=false&delayms=5000', target='_blank', data-category='modal-marketResearch', data-label='modal-marketResearch-slidelink') полноэкранная версия в новом окне
                     .modal-footer
@@ -684,7 +686,7 @@ html
                             h5 
                                 a(href='https://vc.ru/promo/83456-youla-search', target='_blank') Пост о конкурсе на vc.ru
                         div К сожалению, я не победил. ) Я пришел к выводу, что на основании данных такого качества, не проверив их происхождение и достоверность, строить гипотезы категорически нельзя, и логически ушел в продуктовую аналитику, в то время как ожидания организаторов оказались в демонстрации узкого владения инструментами технического анализа.
-                            div.embed-responsive.embed-responsive-4by3 | <iframe loading='lazy', src="https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview" width="466" height="350"></iframe>
+                            // div | <iframe class='lazyload' src="https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview" width="466" height="350"></iframe>
                         div.text-center
                             a.pm-track.text-reset(href='https://drive.google.com/file/d/1-6FzMR6HXLmKXLSiy1-OyGefzxLFzq6C/preview', target='_blank', data-category='modal-youla', data-label='modal-youla-slidelink') полноэкранная версия в новом окне
                     .modal-footer

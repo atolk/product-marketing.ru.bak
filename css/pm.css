@@ -88,3 +88,7 @@
 .personal-info ul a:hover{
     color:#50d8af;
 }
+
+.intro-content {
+    background-image: url('/img/mainbackground.jpg');
+}
